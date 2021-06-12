@@ -37,7 +37,7 @@ Change 文件元数据最后修改时间
 find
 
 1. 按类型查找：
-	-type f 普通文件, d 目录
+  -type f 普通文件, d 目录
 
 2. 按文件状态查找：
   +n 大于
@@ -60,13 +60,13 @@ find
   -cmin  n分钟前
 
 3. 按名称查找
-	--name pattern
+  --name pattern
 
 4. 查找后执行
-	-exec [command] '{}' +
-	其中
-	'{}'为查找结果占位符
-	+ 为分隔符，可用 \; 代替
+  -exec [command] '{}' +
+  其中
+  '{}'为查找结果占位符
+  + 为分隔符，可用 \; 代替
 ```
 
 #### 1.3.1 例子
@@ -90,4 +90,3 @@ find . -type f -newer 1.txt
 # 查找后显示文件信息
 find . -type f -exec ls -lh '{}' +
 ```
-
